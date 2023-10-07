@@ -6,6 +6,10 @@ function closeLoginForm() {
 }
 
 function openLoginForm() {
+    if(document.getElementById('login-form').style.display === 'block') {
+        closeLoginForm();
+        return
+    }
     closeSignupForm()
     document.getElementById('login-form').style.display = 'block';
 }
@@ -17,6 +21,10 @@ function closeSignupForm() {
 }
 
 function openSignupForm() {
+    if(document.getElementById('signup-form').style.display === 'block') {
+        closeSignupForm();
+        return
+    }
     closeLoginForm();
     document.getElementById('signup-form').style.display = 'block';
 }

@@ -4,6 +4,8 @@ body {
 }
 #navbar {
   background-color: aquamarine;
+  height: 40px;
+  display: block;
 }
 #navbarList {
   display: inline;
@@ -23,7 +25,7 @@ body {
 
 #navbarElm {
   color: black;
-  font-size: 25px;
+  font-size: 30px;
   text-decoration: none;
 }
 
@@ -33,9 +35,10 @@ body {
   padding-top: 7px;
   margin-right: 10px;
   text-align: center;
-  line-height: 15px;
+  line-height: 30px;
+  vertical-align: center;
   background-color: rgb(59, 184, 142);
-  border-radius: 15px;
+  border-radius: 10px;
 }
 
 #navbarBtn:hover {
