@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calorie Tracker</title>
+    <link rel="icon" href="./images/Fit-Secret.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/forms.css" />
+    <link rel="stylesheet" href="./styles/search.css" />    
+    <link rel="stylesheet" href="./styles/register.css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  </head>
+
+  <body background="./images/home-background.jpg">
+    <script src="./scripts/form.js"></script>
+    <script src="./scripts/register.js"></script>
+    <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <div>
+      <nav id="navbar">
+        <ul>
+          <li id="navbarList"><a id="navbarElm" href="index.html">About</a></li>
+          <li id="navbarList"><a id="navbarElm" href="food.html">Food</a></li>
+          <li id="navbarList"><a id="navbarElm" href="exercise.html">Exercise</a></li>
+          <li id="navbarList"><button id="navbarBtn" onclick="openLoginForm()">Log In</button></li>
+          <li id="navbarList"><button id="navbarBtn" onclick="openSignupForm()">Sign Up</button></li>
+        </ul>
+      </nav>
+    </div>
+
+    
+
+    <div class="welcome-text">
+      <br> 
+      <br>
+      <h1 style="color:rgb(68, 154, 68)">Lose Weight using <strong>FitSecret</strong>!!!</h1>  
+      <br>
+      <br>
+      <p>
+        Losing weight can be quite the challenge, we understand. But when you become a member of <strong>FitSecret</strong>,
+        you gain access to all the essential tools you need to shed those extra pounds successfully - and maintain your desired weight. 
+        The best part? You can join us for free, with no strings attached. 
+        There&#39s no need to pull out your credit card - it&#39s on us. 
+      </p>
+      <br>
+      <p>
+        Research after research has underscored the advantages of monitoring your food intake and physical activity. 
+        It&#39s a straightforward principle - the more consistently you track your food and activity, 
+        the greater your chances of achieving your weight loss goals. 
+        That&#39s why virtually every effective weight management program recommends keeping a food diary and&#47or an activity log. 
+        However, without the right tools, keeping track of everything you eat and do can be quite a chore.
+      </p>
+      <br>
+      <p>
+        At <strong>FitSecret</strong>, we&#39re committed to making the process of logging your meals and activities as quick and effortless as possible. 
+        After all, the easier we make it for you, the more likely you are to stick to your weight loss plan and succeed in reaching your goals.
+      </p>
+    </div>
+    <br>
+    <br>
+    <div class="our-system">
+      <img src="./images/healthy-meal.png" width="200px" style="margin-right: 10px;">
+      <div>
+        <h2>How does <strong>FitSecret</strong> work?</h2>
+        <br>
+        <p>
+          The beauty of our system lies in its simplicity, thanks to its ability to learn from you! 
+          Most of us tend to stick to the same foods over time. 
+          <strong>FitSecret</strong> takes note of your most frequently consumed meals and activities, making it a breeze to add them back to your log.
+        </p>
+        <br>
+        <p>
+          The more you keep track of your meals, the more effortless it becomes!
+        </p>
+      </div>
+      <br>
+      <br>
+    </div>
+
+      <div class="list">
+        <h3>Having FREE membership you get:</h3>
+        <br>
+        <div class="benefit-list">
+          <ul>
+            <ol>
+              <i class='bx bxs-right-arrow'></i> 
+              <strong>The most user-friendly food diary available on the web</strong> - 
+              Easily record your meals with just a few clicks, whether you're at home or at work, 
+              as long as you have an internet connection.
+            </ol>
+            <br>
+            <ol>
+              <i class='bx bxs-right-arrow'></i>
+              <strong>Your very own personal food database</strong> - 
+              Add your preferred foods and recipes whenever you like, 
+              and access them from anywhere with an internet connection.
+            </ol>
+            <br>
+            <ol>
+              <i class='bx bxs-right-arrow'></i>
+              <strong>A tailored diet profile</strong> - 
+              Customized to align with your unique weight loss objectives.
+            </ol>
+          </ul> 
+        </div>
+
+        <div class="healthy-living">
+          <img src="./images/healthy-lifestyle.png" width="200px" style="margin-right: 10px;">
+          <div>
+            <h3>Why wait? Embark on a journey to healthier living, all for FREE!</h3>
+          <br>
+          <p>
+            All the tools you need for healthy, sustainable weight loss are at your fingertips, 
+            and there's no cost involved! So, what's holding you back? 
+            Say goodbye to spending money on other dieting programs.
+          </p>
+          <button type="submit" class="join-button" onclick="openSignupFormScrollTop()">Join Now For FREE!</button>
+          </div>
+        </div>
+
+
+      </div>
+      
+
+    <div id="login-form" class="wrapper" >
+      <form action="" >
+        <div class="exit-btn">
+          <i class='bx bx-x' id="exit-btn" onclick="closeLoginForm()"></i>
+        </div>
+        <h1>Login</h1>
+        <div class="input-box">
+          <input type="text" placeholder="Username" id="username_input_login"  required>
+          <i class='bx bxs-user'></i>
+        </div>
+       
+        <div class="input-box">
+          <input type="password" placeholder="Password" id="password_input_login" required>
+          <i class='bx bxs-lock-alt' ></i>
+        </div>
+        <div class="remember-forgot">
+          <label><input type="checkbox"> Remember me</label>
+          <a href="#">Forgot password?</a>
+        </div>
+        <button type="submit" class="btn" onclick="Login()">Login</button>
+
+        <div class="register-link">
+          <p onclick="openSignupForm()">Don't have an account? <a href="#">Sign Up</a></p>
+        </div>
+      </form>
+
+    </div>
+
+    <div id="signup-form" class="wrapper" >
+      <form action="" >
+        <div class="exit-btn">
+          <i class='bx bx-x' id="exit-btn" onclick="closeSignupForm()"></i>
+        </div>
+        <h1>Sign up</h1>
+        <div class="input-box">
+          <input type="text" placeholder="Username" id="username_input_signup" required>
+          <i class='bx bxs-user'></i>
+        </div>
+       
+        <div class="input-box">
+          <input type="password" placeholder="Create a Password" id="password_input_signup" required>
+          <i class='bx bxs-lock-alt' ></i>
+        </div>
+        <div class="remember-forgot">
+          <label><input type="checkbox"> Remember me</label>
+          <a href="#" onclick="openLoginForm()">Already have an account?</a>
+        </div>
+        <button type="submit" class="btn" onclick="Signup()">Create account</button>
+
+      </form>
+
+    </div>
+    
+</html>

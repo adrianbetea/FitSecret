@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calorie Tracker</title>
+    <link rel="icon" href="./images/Fit-Secret.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/forms.css" />
+    <link rel="stylesheet" href="./styles/search.css" />
+    <link rel="stylesheet" href="./styles/register.css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  </head>
+
+  <body background="./images/home-background.jpg">
+    <script src="./scripts/form.js"></script>
+    <script src="./scripts/register.js"></script>
+    <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <div>
+      <nav id="navbar">
+        <ul>
+          <li id="navbarList"><a id="navbarElm" href="index.html">About</a></li>
+          <li id="navbarList"><a id="navbarElm" href="food.html">Food</a></li>
+          <li id="navbarList"><a id="navbarElm" href="exercise.html">Exercise</a></li>
+          <li id="navbarList"><button id="navbarBtn" onclick="openLoginForm()">Log In</button></li>
+          <li id="navbarList"><button id="navbarBtn" onclick="openSignupForm()">Sign Up</button></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div style="display: inline-flex;">
+      <div class="goals">
+        <div style="border: 2px solid; border-radius: 10px; align-items: center; padding: 10px;">
+          <h3 style="font-size: 27px;">Select what is your goal.</h3>
+          <ul>
+              <ol><button class="goals-list" id="lose-weight" onclick="saveLoseOnClick()">Lose weight</button></ol>        
+              <ol><button class="goals-list" id="maintain-weight" onclick="saveMaintainOnClick()">Maintain weight</button></ol>
+              <ol><button class="goals-list" id="gain-weight" onclick=" saveGainOnClick()">Gain weight</button></ol>
+          </ul>
+        </div>
+        <br>
+        <div style="border: 2px solid; border-radius: 10px; align-items: center; padding: 10px;">
+          <h4 style="font-size: 16px;">Select what is your baseline activity level</h3>
+          <ul>
+              <ol><button class="goals-list" id="not-active" onclick="saveNotActive()">Not Active</button></ol>        
+              <ol><button class="goals-list" id="lightly-active" onclick="saveLightlyActive()">Lightly Active</button></ol>
+              <ol><button class="goals-list" id="active" onclick="saveActive()">Active</button></ol>
+              <ol><button class="goals-list" id="very-active" onclick="saveVeryActive()">Very Active</button></ol>
+          </ul>
+        </div>
+      </div>
+    
+      <div class="personal-info">
+        <div style="border: 2px solid; border-radius: 10px; align-items: center; padding: 10px;">
+          <h3 style="font-size: 27px;">Select your gender</h3>
+          <br>
+          <label id="male" style="margin-left: 20px; font-size: 20px;" onclick="maleChecked()">Male
+            <input id="male-radiobutton" type="radio" id="male-checkbox" onclick="maleChecked()">
+          </label>
+          
+          <label id="female" style="margin-left: 50px; font-size: 20px;" onclick="femaleChecked()">Female
+            <input id="female-radiobutton" type="radio" id="female-checkbox" onclick="femaleChecked()">
+          </label>
+        </div>
+        <br>
+        <div style="border: 2px solid; border-radius: 10px; align-items: center; padding: 10px;">
+          <h3 style="font-size: 27px;">How old are you?</h3>
+          <input type="number" min="0" placeholder="Age" id="age-input" style="margin-top: 20px; margin-bottom: 10px; padding: 10px 40px 10px 30px; border-radius: 15px; font-size: 16px;">
+          <br>
+          <br>
+          <h3 style="font-size: 20px;">Please enter your height:</h3>
+          <input type="number" min="100" placeholder="Height(CM)" id="height-input" style="margin-top: 20px; margin-bottom: 10px; padding: 10px 40px 10px 30px; border-radius: 15px; font-size: 16px;">Cm
+          <br>
+          <br>
+          <h3 style="font-size: 16px;">Please enter your current weight:</h3>
+          <input type="number" min="0" placeholder="Current Weight(KG)" id="current-weight-input" style="margin-top: 20px; margin-bottom: 10px; padding: 10px 40px 10px 60px; border-radius: 15px; font-size: 12px;">Kg
+          <br>
+          <br>
+          <h3 style="font-size: 16px;">Please enter your goal weight:</h3>
+          <input type="number" min="0" placeholder="Goal Weight(KG)" id="goal-weight-input" style="margin-top: 20px; margin-bottom: 10px; padding: 10px 40px 10px 60px; border-radius: 15px; font-size: 12px;">Kg
+        </div>
+        <button class="next">Next</button>
+
+      </div>
+    
+    </div>
+
+  
+    
+    
+</html>
