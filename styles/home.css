@@ -18,11 +18,6 @@
   font-size: larger;
 }
 
-#myfood {
-  background-color: rgb(82, 186, 151);
-  border: "2px solid white";
-}
-
 .food-navbar-element {
   width: 170px;
   height: 39px;
