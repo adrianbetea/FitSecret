@@ -8,93 +8,128 @@
     <link rel="stylesheet" href="./styles/search.css" />
     <link rel="stylesheet" href="./styles/register.css" />
     <link rel="stylesheet" href="./styles/home.css" />
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
   </head>
 
   <body background="./images/home-background.jpg">
-    <script src="./scripts/form.js"></script>
-    <script src="./scripts/register.js"></script>
-    <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
     <div>
       <nav id="navbar">
         <ul>
-          <li id="navbarList"><a id="navbarElm" href="index.html">About</a></li>
-          <li id="navbarList"><a id="navbarElm" href="food.html">Food</a></li>
-          <li id="navbarList"><a id="navbarElm" href="exercise.html">Exercise</a></li>
-          <li id="navbarList"><button id="navbarBtn" onclick="openLoginForm()">Log In</button></li>
-          <li id="navbarList"><button id="navbarBtn" onclick="openSignupForm()">Sign Up</button></li>
+          <li class="navbarList">
+            <a class="navbarElm" href="index.html">About</a>
+          </li>
+          <li class="navbarList">
+            <a class="navbarElm" href="food.html">Food</a>
+          </li>
+          <li class="navbarList">
+            <a class="navbarElm" href="exercise.html">Exercise</a>
+          </li>
+          <li class="navbarList">
+            <button id="navbarBtn" onclick="openLoginForm()">Log In</button>
+          </li>
+          <li class="navbarList">
+            <button id="navbarBtn" onclick="openSignupForm()">Sign Up</button>
+          </li>
         </ul>
       </nav>
-    </div>    
-    
+    </div>
+
     <div class="bar">
-         <input autocomplete="on" type="search-bar" placeholder="Search...">
-         <i class='bx bx-search-alt-2' id="search-button"></i>
+      <input autocomplete="on" type="search-bar" placeholder="Search..." />
+      <i class="bx bx-search-alt-2" id="search-button"></i>
     </div>
 
     <div class="food-container">
       <div class="food-menu">
-        <img src="./images/sport-doodle-background.png" width="400px" >
+        <img src="./images/sport-doodle-background.png" width="400px" />
         <h2>Add an Exercise</h2>
-        <p style="margin-inline: 20px; margin-bottom: 10px; margin-top: 10px;">
-          Recognize how your daily physical activity impacts your fitness goals, 
-          energy expenditure, and overall well-being.</p>
+        <p style="margin-inline: 20px; margin-bottom: 10px; margin-top: 10px">
+          Recognize how your daily physical activity impacts your fitness goals,
+          energy expenditure, and overall well-being.
+        </p>
+      </div>
+
+      <div id="login-form" class="wrapper">
+        <form action="">
+          <div class="exit-btn">
+            <i class="bx bx-x" id="exit-btn" onclick="closeLoginForm()"></i>
+          </div>
+          <h1>Login</h1>
+          <div class="input-box">
+            <input
+              type="text"
+              placeholder="Username"
+              id="username_input_login"
+              required
+            />
+            <i class="bx bxs-user"></i>
+          </div>
+
+          <div class="input-box">
+            <input
+              type="password"
+              placeholder="Password"
+              id="password_input_login"
+              required
+            />
+            <i class="bx bxs-lock-alt"></i>
+          </div>
+          <div class="remember-forgot">
+            <label><input type="checkbox" /> Remember me</label>
+            <a href="#">Forgot password?</a>
+          </div>
+          <button type="submit" class="btn" onclick="Login()">Login</button>
+
+          <div class="register-link">
+            <p onclick="openSignupForm()">
+              Don't have an account? <a href="#">Sign Up</a>
+            </p>
+          </div>
+        </form>
+      </div>
+
+      <div id="signup-form" class="wrapper">
+        <form action="">
+          <div class="exit-btn">
+            <i class="bx bx-x" id="exit-btn" onclick="closeSignupForm()"></i>
+          </div>
+          <h1>Sign up</h1>
+          <div class="input-box">
+            <input
+              type="text"
+              placeholder="Username"
+              id="username_input_signup"
+              required
+            />
+            <i class="bx bxs-user"></i>
+          </div>
+
+          <div class="input-box">
+            <input
+              type="password"
+              placeholder="Create a Password"
+              id="password_input_signup"
+              required
+            />
+            <i class="bx bxs-lock-alt"></i>
+          </div>
+          <div class="remember-forgot">
+            <label><input type="checkbox" /> Remember me</label>
+            <a href="#" onclick="openLoginForm()">Already have an account?</a>
+          </div>
+          <button type="submit" class="btn" onclick="Signup()">
+            Create account
+          </button>
+        </form>
       </div>
     </div>
 
-
-    <div id="login-form" class="wrapper" >
-      <form action="" >
-        <div class="exit-btn">
-          <i class='bx bx-x' id="exit-btn" onclick="closeLoginForm()"></i>
-        </div>
-        <h1>Login</h1>
-        <div class="input-box">
-          <input type="text" placeholder="Username" id="username_input_login"  required>
-          <i class='bx bxs-user'></i>
-        </div>
-       
-        <div class="input-box">
-          <input type="password" placeholder="Password" id="password_input_login" required>
-          <i class='bx bxs-lock-alt' ></i>
-        </div>
-        <div class="remember-forgot">
-          <label><input type="checkbox"> Remember me</label>
-          <a href="#">Forgot password?</a>
-        </div>
-        <button type="submit" class="btn" onclick="Login()">Login</button>
-
-        <div class="register-link">
-          <p onclick="openSignupForm()">Don't have an account? <a href="#">Sign Up</a></p>
-        </div>
-      </form>
-
-    </div>
-
-    <div id="signup-form" class="wrapper" >
-      <form action="" >
-        <div class="exit-btn">
-          <i class='bx bx-x' id="exit-btn" onclick="closeSignupForm()"></i>
-        </div>
-        <h1>Sign up</h1>
-        <div class="input-box">
-          <input type="text" placeholder="Username" id="username_input_signup" required>
-          <i class='bx bxs-user'></i>
-        </div>
-       
-        <div class="input-box">
-          <input type="password" placeholder="Create a Password" id="password_input_signup" required>
-          <i class='bx bxs-lock-alt' ></i>
-        </div>
-        <div class="remember-forgot">
-          <label><input type="checkbox"> Remember me</label>
-          <a href="#" onclick="openLoginForm()">Already have an account?</a>
-        </div>
-        <button type="submit" class="btn" onclick="Signup()">Create account</button>
-
-      </form>
-
-    </div>
-    
+    <script src="./scripts/form.js"></script>
+    <script src="./scripts/register.js"></script>
+    <script src="./scripts/home.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </body>
 </html>

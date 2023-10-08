@@ -8,39 +8,61 @@
     <link rel="stylesheet" href="./styles/search.css" />
     <link rel="stylesheet" href="./styles/register.css" />
     <link rel="stylesheet" href="./styles/home.css" />
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
   </head>
 
   <body background="./images/home-background.jpg">
-    <script src="./scripts/form.js"></script>
-    <script src="./scripts/register.js"></script>
-    <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
     <div>
       <nav id="navbar">
         <ul>
-          <li id="navbarList"><a id="navbarElm">MY Home</a></li>
-          <li id="navbarList"><a id="navbarElm">Food</a></li>
-          <li id="navbarList"><a id="navbarElm">Exercise</a></li>
-          <li id="navbarList" id="username"><a id="navbarUser" >USERNAME</a></li>
-          <li id="navbarList" id="navbarUser"><a id="navbarUser"><i class='bx bxs-user-pin'></i></a></li>
+          <li class="navbarList">
+            <a class="navbarElm" id="myhome" onclick="openMyHome()">MY Home</a>
+          </li>
+          <li class="navbarList">
+            <a class="navbarElm" id="food" onclick="openFood()">Food</a>
+          </li>
+          <li class="navbarList">
+            <a class="navbarElm" id="exercise" onclick="openExercise()"
+              >Exercise</a
+            >
+          </li>
+          <li class="navbarList" id="username">
+            <a id="navbarUser">USERNAME</a>
+          </li>
+          <li class="navbarList" id="navbarUser">
+            <a class="navbarUser" style="padding: 0px 0px 10px"
+              ><i class="bx bxs-user-pin"></i
+            ></a>
+          </li>
         </ul>
       </nav>
     </div>
 
     <div class="second-navbar">
-        <div class="myhome-navbar-element" id="myhome-home">Home</div>
-        <div class="myhome-navbar-element" id="myhome-goals">Goals</div>
-        <div class="myhome-navbar-element" id="myhome-checkin">Check-In</div>
-        <div class="myhome-navbar-element" id="myhome-profile">Profile</div>
+      <div class="myhome-navbar-element" id="myhome-home">Home</div>
+      <div class="myhome-navbar-element" id="myhome-goals">Goals</div>
+      <div class="myhome-navbar-element" id="myhome-checkin">Check-In</div>
+      <div class="myhome-navbar-element" id="myhome-profile">Profile</div>
 
-        <div class="food-navbar-element" id="food-journal">Food Journal</div>
-        <div class="food-navbar-element" id="food-foods">My Foods</div>
-        <div class="food-navbar-element" id="food-search">Search</div>
+      <div class="food-navbar-element" id="food-journal">Food Journal</div>
+      <div class="food-navbar-element" id="food-foods">My Foods</div>
+      <div class="food-navbar-element" id="food-search">Search</div>
 
-        <div class="exercise-navbar-element" id="exercise-journal">Exercise Journal</div>
-        <div class="exercise-navbar-element" id="exercise-exercises">My Exercises</div>
-        <div class="exercise-navbar-element" id="exercise-search">Search</div>
+      <div class="exercise-navbar-element" id="exercise-journal">
+        Exercise Journal
+      </div>
+      <div class="exercise-navbar-element" id="exercise-exercises">
+        My Exercises
+      </div>
+      <div class="exercise-navbar-element" id="exercise-search">Search</div>
     </div>
 
+    <script src="./scripts/form.js"></script>
+    <script src="./scripts/register.js"></script>
+    <script src="./scripts/home.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </body>
 </html>
