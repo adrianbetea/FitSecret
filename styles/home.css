@@ -55,13 +55,29 @@
 }
 
 .add-button {
-  width: 400px;
+  width: 200px;
   padding: 10px;
   transform: translate(5%);
   background: aquamarine;
   border-radius: 25px;
+  margin-left: 45px;
 }
 
 .add-button:hover {
   background: rgb(58, 149, 119);
+}
+
+.calorie-container {
+  display: flex;
+  background-color: antiquewhite;
+  width: 90%;
+  position: relative;
+  transform: translate(5%);
+  padding: 15px;
+  border-radius: 30%;
+  opacity: 90%;
+}
+
+#log-weight-button:hover {
+  color: gray;
 }

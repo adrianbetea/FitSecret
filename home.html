@@ -78,29 +78,104 @@
       <br /><br />
       <div style="font-size: 25px; display: flex; margin-left: 20px">
         Calories remaining:
-        <div class="calories" id="calories-remaining" style="margin-left: 20px">
+        <div
+          class="calories"
+          id="calories-remaining"
+          style="margin-left: 30px; font-size: 40px"
+        >
           XXXX
         </div>
       </div>
       <br />
-      <button
-        type="submit"
-        class="add-button"
-        id="add-food-button"
-        onclick="AddFoodClick()"
-      >
-        Add Food
-      </button>
       <br />
-      <br />
-      <button
-        type="submit"
-        class="add-button"
-        id="add-exercise-button"
-        onclick="AddExerciseClick()"
-      >
-        Add Exercise
-      </button>
+      <div style="display: flex">
+        <button
+          type="submit"
+          class="add-button"
+          id="add-food-button"
+          onclick="AddFoodClick()"
+        >
+          Add Food
+        </button>
+        <button
+          type="submit"
+          class="add-button"
+          id="add-exercise-button"
+          onclick="AddExerciseClick()"
+        >
+          Add Exercise
+        </button>
+      </div>
+      <br /><br />
+      <div class="calorie-container">
+        <div id="daily-calorie-label" style="transform: translate(50%)">
+          <label style="color: rgb(163, 149, 149); font-size: 10px">GOAL</label>
+          <div class="calories" id="daily-calories" style="padding-top: 5px">
+            XXXX
+          </div>
+        </div>
+        <hr style="transform: translate(4000%)" />
+        <div id="food-consumed-label" style="transform: translate(270%)">
+          <label style="color: rgb(163, 149, 149); font-size: 10px">FOOD</label>
+          <div class="calories" id="food-calories" style="padding-top: 5px">
+            XXXX
+          </div>
+        </div>
+
+        <div style="transform: translate(850%, 20%); font-size: 30px">
+          <label style="color: rgb(163, 149, 149)">+</label>
+        </div>
+
+        <div id="exercise-label" style="transform: translate(350%)">
+          <label style="color: rgb(163, 149, 149); font-size: 10px"
+            >EXERCISE</label
+          >
+          <div class="calories" id="exercise-calories" style="padding-top: 5px">
+            XXXX
+          </div>
+        </div>
+
+        <div style="transform: translate(1150%, 20%); font-size: 30px">
+          <label style="color: rgb(163, 149, 149)">=</label>
+        </div>
+
+        <div id="exercise-label" style="transform: translate(550%)">
+          <label style="color: rgb(163, 149, 149); font-size: 10px">NET</label>
+          <div class="calories" id="exercise-calories" style="padding-top: 5px">
+            XXXX
+          </div>
+        </div>
+      </div>
+
+      <div style="padding: 20px; display: grid; width: 250px">
+        <label style="font-size: 25px">Today's weight</label>
+        <div style="display: inline-flex">
+          <input
+            type="number"
+            min="0"
+            style="
+              width: 80px;
+              height: 40px;
+              margin-left: 10px;
+              transform: translate(0, 10%);
+              font-size: 20px;
+              text-align: center;
+            "
+          />
+
+          <div
+            style="padding: 5px; font-size: 20px; transform: translate(0%, 15%)"
+          >
+            Kg
+          </div>
+          <i
+            class="bx bxs-food-menu"
+            style="font-size: 40px; transform: translate(20%, 10%)"
+            id="log-weight-button"
+            onclick=""
+          ></i>
+        </div>
+      </div>
     </div>
 
     <script src="./scripts/form.js"></script>
