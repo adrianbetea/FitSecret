@@ -42,6 +42,18 @@
   font-size: larger;
 }
 
+.about-navbar-element {
+  width: 170px;
+  height: 39px;
+  background-color: rgb(82, 186, 151);
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  display: none;
+  border-bottom: 1px ridge;
+  font-size: larger;
+}
+
 .myhome-home-summary {
   display: block;
   width: 600px;
