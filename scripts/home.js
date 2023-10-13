@@ -49,6 +49,8 @@ function openMyHome() {
     });
     myhomeElm.style.backgroundColor = 'rgb(82, 186, 151)';
     myhomeElm.style.border = '2px solid white';
+
+    window.location.href = ("./home.html");
 }
 
 function openFood() {
@@ -60,6 +62,8 @@ function openFood() {
     });
     foodElm.style.backgroundColor = 'rgb(82, 186, 151)';
     foodElm.style.border = '2px solid white';
+
+    window.location.href = ("./food-journal.html");
     
 }
 
@@ -86,3 +90,11 @@ function openAbout() {
     aboutElm.style.border = '2px solid white';
 
 }
+
+var home_date = document.getElementById("current-date");
+var date = new Date();
+var dd = date.getDate();
+var mm = date.getMonth() + 1;
+var yyyy = date.getFullYear();
+var newDate = dd + "." + mm + "." + yyyy;
+home_date.innerHTML = newDate;

@@ -15,7 +15,7 @@
   justify-content: center;
   display: flex;
   border: 2px ridge;
-  font-size: larger;
+  font-size: 25px;
 }
 
 .food-navbar-element {
@@ -27,7 +27,7 @@
   justify-content: center;
   display: none;
   border: 2px ridge;
-  font-size: larger;
+  font-size: 25px;
 }
 
 .exercise-navbar-element {
@@ -39,7 +39,7 @@
   justify-content: center;
   display: none;
   border: 2px ridge;
-  font-size: larger;
+  font-size: 25px;
 }
 
 .about-navbar-element {
@@ -63,6 +63,7 @@
   border: 2px solid;
   border-radius: 15px;
   background: transparent;
+  backdrop-filter: blur(5px);
   padding: 20px;
 }
 
@@ -87,6 +88,8 @@
   transform: translate(5%);
   padding: 15px;
   border-radius: 30%;
+  backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
   opacity: 90%;
 }
 

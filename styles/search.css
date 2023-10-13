@@ -29,7 +29,7 @@
   color: rgb(147, 241, 210);
 }
 
-.food-container {
+.search-container {
   background: transparent;
   display: flex;
   flex-direction: column;
@@ -38,12 +38,14 @@
   margin-top: 50px;
 }
 
-.food-menu {
+.food-menu,
+.exercise-menu {
   background: transparent;
   display: flex;
   flex-direction: column;
   max-width: 480px;
   align-items: center;
   border: 2px solid;
+  backdrop-filter: blur(5px);
   border-radius: 20px;
 }
