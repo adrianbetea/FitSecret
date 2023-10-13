@@ -162,7 +162,7 @@
 
       <div style="padding: 20px; display: grid; width: 250px">
         <label style="font-size: 25px">Today's weight</label>
-        <div style="display: inline-flex">
+        <div style="display: flex">
           <input
             type="number"
             min="0"
@@ -189,11 +189,27 @@
           ></i>
         </div>
       </div>
+
+      <div
+        style="
+          padding: 20px;
+          display: inline-flex;
+          width: 260px;
+          transform: translate(100%, -110%);
+          height: 80px;
+        "
+      >
+        <div style="transform: translate(80%)">
+          <label style="font-size: 20px; margin-bottom: 20px">date</label>
+          <div id="current-date" style="font-size: 25px">XX/XX/XXXX</div>
+        </div>
+      </div>
     </div>
 
     <script src="./scripts/form.js"></script>
     <script src="./scripts/register.js"></script>
     <script src="./scripts/home.js"></script>
+    <script src="./scripts/calendar.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </body>
 </html>
