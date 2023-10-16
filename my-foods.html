@@ -19,8 +19,8 @@
   <body
     style="
       background-image: url(./images/healthy-food-background.jpg);
-      background-size: cover;
       background-repeat: no-repeat;
+      background-size: cover;
     "
   >
     <div>
@@ -96,9 +96,6 @@
           >My Foods</a
         >
       </div>
-      <div class="food-navbar-element" id="food-search" style="display: flex">
-        Search
-      </div>
 
       <div class="exercise-navbar-element" id="exercise-journal">
         Exercise Journal
@@ -111,9 +108,73 @@
       <div class="about-navbar-element">About FitSecret</div>
     </div>
 
+    <div class="bar">
+      <input autocomplete="on" type="search-bar" placeholder="Search..." />
+      <i class="bx bx-search-alt-2" id="search-button"></i>
+    </div>
+
+    <div class="search-container">
+      <div class="food-menu" style="width: 500px; height: 420px"></div>
+      <div class="meal-details">
+        <div class="servings">
+          <div>
+            <label style="color: black; font-size: 25px">Servings:</label>
+            <input
+              type="text"
+              size="5px"
+              style="
+                height: 30px;
+                margin-left: 20px;
+                margin-bottom: 10px;
+                background-color: antiquewhite;
+              "
+            />
+          </div>
+          <button style="height: 25px">Add</button>
+        </div>
+
+        <div class="meal-select">
+          <button
+            style="
+              height: 30px;
+              margin-left: 10px;
+              margin-right: 15px;
+              border: 2px solid;
+            "
+            id="breakfast-sel"
+            onclick="selectBreakfast()"
+          >
+            Breakfast
+          </button>
+          <button
+            style="height: 30px; margin-right: 15px; border: 2px solid"
+            id="lunch-sel"
+            onclick="selectLunch()"
+          >
+            Lunch
+          </button>
+          <button
+            style="height: 30px; margin-right: 15px; border: 2px solid"
+            id="dinner-sel"
+            onclick="selectDinner()"
+          >
+            Dinner
+          </button>
+          <button
+            style="height: 30px; margin-right: 15px; border: 2px solid"
+            id="snacks-sel"
+            onclick="selectSnacks()"
+          >
+            Snacks
+          </button>
+        </div>
+      </div>
+    </div>
+
     <script src="./scripts/form.js"></script>
     <script src="./scripts/register.js"></script>
     <script src="./scripts/home.js"></script>
+    <script src="./scripts/search.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </body>
 </html>

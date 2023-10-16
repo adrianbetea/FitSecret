@@ -49,3 +49,21 @@
   backdrop-filter: blur(5px);
   border-radius: 20px;
 }
+
+.meal-details {
+  display: flex;
+  flex-direction: row;
+}
+
+.servings {
+  display: flex;
+  flex-direction: column;
+  transform: translate(10%);
+  margin-top: 10px;
+}
+
+.meal-select {
+  display: flex;
+  flex-direction: row;
+  transform: translate(10%, 17%);
+}
