@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Home - FitSecret</title>
+    <link rel="icon" href="./images/Fit-Secret.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/forms.css" />
+    <link rel="stylesheet" href="./styles/search.css" />
+    <link rel="stylesheet" href="./styles/register.css" />
+    <link rel="stylesheet" href="./styles/home.css" />
+    <link rel="stylesheet" href="./styles/goals.css" />
+    <link rel="stylesheet" href="./styles/food-journal.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body
+    style="
+      background-image: url(./images/healthy-food-background.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+    "
+  >
+    <div>
+      <nav id="navbar">
+        <ul>
+          <li class="navbarList">
+            <a class="navbarElm" id="myhome" onclick="openMyHome()">MY Home</a>
+          </li>
+          <li class="navbarList">
+            <a
+              class="navbarElm"
+              id="food"
+              onclick="openFood()"
+              style="
+                background-color: rgb(82, 186, 151);
+                border: 2px solid white;
+              "
+              >Food</a
+            >
+          </li>
+          <li class="navbarList">
+            <a class="navbarElm" id="exercise" onclick="openExercise()"
+              >Exercise</a
+            >
+          </li>
+          <li class="navbarList">
+            <a class="navbarElm" id="about" onclick="openAbout()">About</a>
+          </li>
+          <li class="navbarList" id="username">
+            <a id="navbarUser">USERNAME</a>
+          </li>
+          <li class="navbarList" id="navbarUser">
+            <a class="navbarUser" style="padding: 0px 0px 10px"
+              ><i class="bx bxs-user-pin"></i
+            ></a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="second-navbar">
+      <div class="myhome-navbar-element" id="myhome-home" style="display: none">
+        <a style="text-decoration: none; color: black" href="./home.html"
+          >Home</a
+        >
+      </div>
+      <div
+        class="myhome-navbar-element"
+        id="myhome-goals"
+        style="display: none"
+      >
+        <a style="text-decoration: none; color: black" href="./goals.html"
+          >Goals</a
+        >
+      </div>
+      <div
+        class="myhome-navbar-element"
+        id="myhome-profile"
+        style="display: none"
+      >
+        Profile
+      </div>
+
+      <div class="food-navbar-element" id="food-journal" style="display: flex">
+        <a
+          href="./food-journal.html"
+          style="text-decoration: none; color: black"
+          >Food Journal</a
+        >
+      </div>
+      <div class="food-navbar-element" id="food-foods" style="display: flex">
+        <a href="./my-foods.html" style="text-decoration: none; color: gray"
+          >My Foods</a
+        >
+      </div>
+
+      <div class="exercise-navbar-element" id="exercise-journal">
+        Exercise Journal
+      </div>
+      <div class="exercise-navbar-element" id="exercise-exercises">
+        My Exercises
+      </div>
+      <div class="exercise-navbar-element" id="exercise-search">Search</div>
+
+      <div class="about-navbar-element">About FitSecret</div>
+    </div>
+
+    <div class="bar">
+      <input autocomplete="on" type="search-bar" placeholder="Search..." />
+      <i class="bx bx-search-alt-2" id="search-button"></i>
+    </div>
+
+    <div class="search-container">
+      <div class="food-menu" style="width: 500px; height: 420px"></div>
+      <div class="meal-details">
+        <div class="servings">
+          <div>
+            <label style="color: black; font-size: 25px">Servings:</label>
+            <input
+              type="text"
+              size="5px"
+              style="
+                height: 30px;
+                margin-left: 20px;
+                margin-bottom: 10px;
+                background-color: antiquewhite;
+              "
+            />
+          </div>
+          <button style="height: 25px">Add</button>
+        </div>
+
+        <div class="meal-select">
+          <button
+            style="
+              height: 30px;
+              margin-left: 10px;
+              margin-right: 15px;
+              border: 2px solid;
+            "
+            id="breakfast-sel"
+            onclick="selectBreakfast()"
+          >
+            Breakfast
+          </button>
+          <button
+            style="height: 30px; margin-right: 15px; border: 2px solid"
+            id="lunch-sel"
+            onclick="selectLunch()"
+          >
+            Lunch
+          </button>
+          <button
+            style="height: 30px; margin-right: 15px; border: 2px solid"
+            id="dinner-sel"
+            onclick="selectDinner()"
+          >
+            Dinner
+          </button>
+          <button
+            style="height: 30px; margin-right: 15px; border: 2px solid"
+            id="snacks-sel"
+            onclick="selectSnacks()"
+          >
+            Snacks
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="./scripts/form.js"></script>
+    <script src="./scripts/register.js"></script>
+    <script src="./scripts/home.js"></script>
+    <script src="./scripts/search.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </body>
+</html>

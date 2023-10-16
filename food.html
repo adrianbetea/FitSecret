@@ -1,20 +1,27 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>FitSecret Foods</title>
+    <title>Food - FitSecret</title>
     <link rel="icon" href="./images/Fit-Secret.png" type="image/x-icon" />
     <link rel="stylesheet" href="./styles/style.css" />
     <link rel="stylesheet" href="./styles/forms.css" />
     <link rel="stylesheet" href="./styles/search.css" />
     <link rel="stylesheet" href="./styles/register.css" />
     <link rel="stylesheet" href="./styles/home.css" />
+    <link rel="stylesheet" href="./styles/goals.css" />
+    <link rel="stylesheet" href="./styles/food-journal.css" />
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
   </head>
 
-  <body background="./images/home-background.jpg">
+  <body
+    style="
+      background-image: url(./images/healthy-food-background.jpg);
+      background-size: cover;
+    "
+  >
     <div>
       <nav id="navbar">
         <ul>
@@ -42,7 +49,7 @@
       <i class="bx bx-search-alt-2" id="search-button"></i>
     </div>
 
-    <div class="food-container">
+    <div class="search-container">
       <div class="food-menu">
         <img src="./images/food-doodle-background.png" width="400px" />
         <h2>Food Analysis</h2>
@@ -129,6 +136,7 @@
     <script src="./scripts/form.js"></script>
     <script src="./scripts/register.js"></script>
     <script src="./scripts/home.js"></script>
+    <script src="./scripts/calendar.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </body>
 </html>

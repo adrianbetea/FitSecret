@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Calorie Tracker</title>
+    <title>Home - FitSecret</title>
     <link rel="icon" href="./images/Fit-Secret.png" type="image/x-icon" />
     <link rel="stylesheet" href="./styles/style.css" />
     <link rel="stylesheet" href="./styles/forms.css" />
     <link rel="stylesheet" href="./styles/search.css" />
     <link rel="stylesheet" href="./styles/register.css" />
     <link rel="stylesheet" href="./styles/home.css" />
+    <link rel="stylesheet" href="./styles/goals.css" />
+    <link rel="stylesheet" href="./styles/food-journal.css" />
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
   </head>
 
-  <body background="./images/home-background.jpg">
+  <body style="background-image: url(./images/home-background.jpg)">
     <div>
       <nav id="navbar">
         <ul>
@@ -38,6 +40,9 @@
               >Exercise</a
             >
           </li>
+          <li class="navbarList">
+            <a class="navbarElm" id="about" onclick="openAbout()">About</a>
+          </li>
           <li class="navbarList" id="username">
             <a id="navbarUser">USERNAME</a>
           </li>
@@ -51,13 +56,30 @@
     </div>
 
     <div class="second-navbar">
-      <div class="myhome-navbar-element" id="myhome-home">Home</div>
-      <div class="myhome-navbar-element" id="myhome-goals">Goals</div>
+      <div class="myhome-navbar-element" id="myhome-home">
+        <a style="text-decoration: none; color: gray" href="./home.html"
+          >Home</a
+        >
+      </div>
+      <div class="myhome-navbar-element" id="myhome-goals">
+        <a style="text-decoration: none; color: black" href="./goals.html"
+          >Goals</a
+        >
+      </div>
       <div class="myhome-navbar-element" id="myhome-profile">Profile</div>
 
-      <div class="food-navbar-element" id="food-journal">Food Journal</div>
-      <div class="food-navbar-element" id="food-foods">My Foods</div>
-      <div class="food-navbar-element" id="food-search">Search</div>
+      <div class="food-navbar-element" id="food-journal">
+        <a
+          style="text-decoration: none; color: black"
+          href="./food-journal.html"
+          >Food Journal</a
+        >
+      </div>
+      <div class="food-navbar-element" id="food-foods">
+        <a href="./my-foods.html" style="text-decoration: none; color: black"
+          >My Foods</a
+        >
+      </div>
 
       <div class="exercise-navbar-element" id="exercise-journal">
         Exercise Journal
@@ -66,6 +88,8 @@
         My Exercises
       </div>
       <div class="exercise-navbar-element" id="exercise-search">Search</div>
+
+      <div class="about-navbar-element">About FitSecret</div>
     </div>
 
     <div class="myhome-home-summary">
@@ -78,29 +102,119 @@
       <br /><br />
       <div style="font-size: 25px; display: flex; margin-left: 20px">
         Calories remaining:
-        <div class="calories" id="calories-remaining" style="margin-left: 20px">
+        <div
+          class="calories"
+          id="calories-remaining"
+          style="margin-left: 30px; font-size: 40px"
+        >
           XXXX
         </div>
       </div>
       <br />
-      <button
-        type="submit"
-        class="add-button"
-        id="add-food-button"
-        onclick="AddFoodClick()"
-      >
-        Add Food
-      </button>
       <br />
-      <br />
-      <button
-        type="submit"
-        class="add-button"
-        id="add-exercise-button"
-        onclick="AddExerciseClick()"
+      <div style="display: flex">
+        <button
+          type="submit"
+          class="add-button"
+          id="add-food-button"
+          onclick="AddFoodClick()"
+        >
+          Add Food
+        </button>
+        <button
+          type="submit"
+          class="add-button"
+          id="add-exercise-button"
+          onclick="AddExerciseClick()"
+        >
+          Add Exercise
+        </button>
+      </div>
+      <br /><br />
+      <div class="calorie-container">
+        <div id="daily-calorie-label" style="transform: translate(50%)">
+          <label style="color: rgb(163, 149, 149); font-size: 10px">GOAL</label>
+          <div class="calories" id="daily-calories" style="padding-top: 5px">
+            XXXX
+          </div>
+        </div>
+        <hr style="transform: translate(4000%)" />
+        <div id="food-consumed-label" style="transform: translate(270%)">
+          <label style="color: rgb(163, 149, 149); font-size: 10px">FOOD</label>
+          <div class="calories" id="food-calories" style="padding-top: 5px">
+            XXXX
+          </div>
+        </div>
+
+        <div style="transform: translate(850%, 20%); font-size: 30px">
+          <label style="color: rgb(163, 149, 149)">+</label>
+        </div>
+
+        <div id="exercise-label" style="transform: translate(350%)">
+          <label style="color: rgb(163, 149, 149); font-size: 10px"
+            >EXERCISE</label
+          >
+          <div class="calories" id="exercise-calories" style="padding-top: 5px">
+            XXXX
+          </div>
+        </div>
+
+        <div style="transform: translate(1150%, 20%); font-size: 30px">
+          <label style="color: rgb(163, 149, 149)">=</label>
+        </div>
+
+        <div id="exercise-label" style="transform: translate(550%)">
+          <label style="color: rgb(163, 149, 149); font-size: 10px">NET</label>
+          <div class="calories" id="exercise-calories" style="padding-top: 5px">
+            XXXX
+          </div>
+        </div>
+      </div>
+
+      <div style="padding: 20px; display: grid; width: 250px">
+        <label style="font-size: 25px">Today's weight</label>
+        <div style="display: flex">
+          <input
+            type="number"
+            min="0"
+            style="
+              width: 80px;
+              height: 40px;
+              margin-left: 10px;
+              transform: translate(0, 10%);
+              font-size: 20px;
+              text-align: center;
+            "
+          />
+
+          <div
+            style="padding: 5px; font-size: 20px; transform: translate(0%, 15%)"
+          >
+            Kg
+          </div>
+          <i
+            class="bx bxs-food-menu"
+            style="font-size: 40px; transform: translate(20%, 10%)"
+            id="log-weight-button"
+            onclick=""
+          ></i>
+        </div>
+      </div>
+
+      <div
+        style="
+          padding: 20px;
+          display: inline-flex;
+          width: 260px;
+          transform: translate(100%, -110%);
+          height: 80px;
+        "
       >
-        Add Exercise
-      </button>
+        <div style="transform: translate(80%)">
+          <label style="font-size: 20px; margin-bottom: 20px">date</label>
+          <div id="current-date" style="font-size: 25px">XX/XX/XXXX</div>
+        </div>
+      </div>
     </div>
 
     <script src="./scripts/form.js"></script>
