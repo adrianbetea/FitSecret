@@ -21,7 +21,6 @@
       background-image: url(./images/healthy-food-background.jpg);
       background-repeat: no-repeat;
       background-size: cover;
-      background-position: center;
     "
   >
     <div>
@@ -91,7 +90,9 @@
         >
       </div>
       <div class="food-navbar-element" id="food-foods" style="display: flex">
-        My Foods
+        <a href="./my-foods.html" style="text-decoration: none; color: black"
+          >My Foods</a
+        >
       </div>
       <div class="food-navbar-element" id="food-search" style="display: flex">
         Search
@@ -148,7 +149,80 @@
         </div>
       </div>
 
-      next
+      <div class="meal-container">
+        <div style="width: 100%">
+          <table class="meal-table">
+            <tbody>
+              <tr class="meal-header">
+                <td class="first alt">Breakfast</td>
+                <td class="alt nutrient-column">
+                  Calories
+                  <div class="subtitle">kcal</div>
+                </td>
+                <td class="alt nutrient-column">
+                  Carbs
+                  <div class="subtitle">g</div>
+                </td>
+                <td class="alt nutrient-column">
+                  Protein
+                  <div class="subtitle">g</div>
+                </td>
+                <td class="alt nutrient-column">
+                  Fat
+                  <div class="subtitle">g</div>
+                </td>
+              </tr>
+
+              <tr class="bottom">
+                <td class="first alt">
+                  <a class="add-food" href="#">Add Food</a>
+                </td>
+                <td>&nbsp;total1</td>
+                <td>&nbsp;total1</td>
+                <td>&nbsp;total1</td>
+                <td>&nbsp;total1</td>
+              </tr>
+              <tr class="meal-header">
+                <td class="first alt">Lunch</td>
+              </tr>
+              <tr class="bottom">
+                <td class="first alt">
+                  <a class="add-food" href="#">Add Food</a>
+                </td>
+                <td>&nbsp;total2</td>
+                <td>&nbsp;total2</td>
+                <td>&nbsp;total2</td>
+                <td>&nbsp;total2</td>
+              </tr>
+              <tr class="meal-header">
+                <td class="first alt">Dinner</td>
+              </tr>
+              <tr class="bottom">
+                <td class="first alt">
+                  <a class="add-food" href="#">Add Food</a>
+                </td>
+                <td>&nbsp;total3</td>
+                <td>&nbsp;total3</td>
+                <td>&nbsp;total3</td>
+                <td>&nbsp;total3</td>
+              </tr>
+              <tr class="meal-header">
+                <td class="first alt">Snacks</td>
+              </tr>
+
+              <tr class="bottom">
+                <td class="first alt">
+                  <a class="add-food" href="#">Add Food</a>
+                </td>
+                <td>&nbsp;total4</td>
+                <td>&nbsp;total4</td>
+                <td>&nbsp;total4</td>
+                <td>&nbsp;total4</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
     </div>
 
     <script src="./scripts/form.js"></script>

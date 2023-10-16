@@ -1,8 +1,8 @@
 .food-journal-container {
   width: 700px;
-  height: 540px;
+  height: 630px;
   margin: auto;
-  margin-top: 30px;
+  margin-top: 20px;
   border: 2px solid;
   border-radius: 15px;
   background: transparent;
@@ -20,4 +20,64 @@
   background-color: blueviolet;
   border-radius: 20px;
   transform: translateY(-15%);
+}
+
+.meal-container {
+  display: flex;
+  background-color: aqua;
+  width: 100%;
+  height: 80%;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  height: 100%;
+}
+
+tbody {
+  display: table-row-group;
+  font-weight: bold;
+  text-align: center;
+}
+
+tr {
+  display: table-row;
+  line-height: 20px;
+}
+
+td {
+  padding: 4px 10px;
+  border: none;
+}
+
+.first {
+  background: none;
+  border: none;
+  color: #00548f;
+  font-size: 18px;
+  font-weight: bold;
+  padding-left: 0;
+  text-transform: capitalize;
+  text-align: left;
+  padding: 15px 0 10px 0;
+  width: 350px;
+  height: 25px;
+  white-space: normal;
+  border: none;
+}
+
+table .bottom {
+  border: none;
+}
+
+.add-food {
+  font-size: 13px;
+  color: #0072bf;
+  padding-right: 9px;
+  margin-right: 7px;
+  cursor: pointer;
+  text-decoration: none;
+  vertical-align: baseline;
 }
