@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>About - FitSecret</title>
+    <link rel="icon" href="./images/Fit-Secret.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/forms.css" />
+    <link rel="stylesheet" href="./styles/search.css" />
+    <link rel="stylesheet" href="./styles/register.css" />
+    <link rel="stylesheet" href="./styles/home.css" />
+    <link rel="stylesheet" href="./styles/goals.css" />
+    <link rel="stylesheet" href="./styles/food-journal.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body style="background-image: url(./images/home-background.jpg)">
+    <div>
+      <nav id="navbar">
+        <ul>
+          <li class="navbarList">
+            <a class="navbarElm" id="myhome" onclick="openMyHome()">MY Home</a>
+          </li>
+          <li class="navbarList">
+            <a class="navbarElm" id="food" onclick="openFood()">Food</a>
+          </li>
+          <li class="navbarList">
+            <a class="navbarElm" id="exercise" onclick="openExercise()"
+              >Exercise</a
+            >
+          </li>
+          <li class="navbarList">
+            <a
+              style="
+                background-color: rgb(82, 186, 151);
+                border: 2px solid white;
+              "
+              class="navbarElm"
+              id="about"
+              onclick="openAbout()"
+              >About</a
+            >
+          </li>
+          <li class="navbarList" id="username">
+            <a id="navbarUser">USERNAME</a>
+          </li>
+          <li class="navbarList" id="navbarUser">
+            <a class="navbarUser" style="padding: 0px 0px 10px"
+              ><i class="bx bxs-user-pin"></i
+            ></a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="second-navbar">
+      <div class="myhome-navbar-element" id="myhome-home" style="display: none">
+        <a style="text-decoration: none; color: gray" href="./home.html"
+          >Home</a
+        >
+      </div>
+      <div
+        class="myhome-navbar-element"
+        id="myhome-goals"
+        style="display: none"
+      >
+        <a style="text-decoration: none; color: black" href="./goals.html"
+          >Goals</a
+        >
+      </div>
+
+      <div class="food-navbar-element" id="food-journal" style="display: none">
+        <a
+          style="text-decoration: none; color: gray"
+          href="./food-journal.html"
+          >Food Journal</a
+        >
+      </div>
+      <div class="food-navbar-element" id="food-foods" style="display: none">
+        <a href="./my-foods.html" style="text-decoration: none; color: black"
+          >My Foods</a
+        >
+      </div>
+
+      <div class="exercise-navbar-element" id="exercise-journal"
+      style="display: none; width: 250px">
+      <a
+      style="text-decoration: none; color: gray"
+      href="./exercise-journal.html"
+      >Exercise Journal</a
+      >
+      </div>
+      <div class="exercise-navbar-element" id="exercise-exercises">
+        My Exercises
+      </div>
+
+      <div class="about-navbar-element" style="display: flex;">About FitSecret</div>
+    </div>
+    <div class="welcome-text">
+        <br> 
+        <br>
+        <h1 style="color:rgb(68, 154, 68)">Lose Weight using <strong>FitSecret</strong>!!!</h1>  
+        <br>
+        <br>
+        <p>
+          Losing weight can be quite the challenge, we understand. But when you become a member of <strong>FitSecret</strong>,
+          you gain access to all the essential tools you need to shed those extra pounds successfully - and maintain your desired weight. 
+          The best part? You can join us for free, with no strings attached. 
+          There&#39s no need to pull out your credit card - it&#39s on us. 
+        </p>
+        <br>
+        <p>
+          Research after research has underscored the advantages of monitoring your food intake and physical activity. 
+          It&#39s a straightforward principle - the more consistently you track your food and activity, 
+          the greater your chances of achieving your weight loss goals. 
+          That&#39s why virtually every effective weight management program recommends keeping a food diary and&#47or an activity log. 
+          However, without the right tools, keeping track of everything you eat and do can be quite a chore.
+        </p>
+        <br>
+        <p>
+          At <strong>FitSecret</strong>, we&#39re committed to making the process of logging your meals and activities as quick and effortless as possible. 
+          After all, the easier we make it for you, the more likely you are to stick to your weight loss plan and succeed in reaching your goals.
+        </p>
+      </div>
+      <br>
+      <br>
+      <div class="our-system">
+        <img src="./images/healthy-meal.png" width="200px" style="margin-right: 10px;">
+        <div>
+          <h2>How does <strong>FitSecret</strong> work?</h2>
+          <br>
+          <p>
+            The beauty of our system lies in its simplicity, thanks to its ability to learn from you! 
+            Most of us tend to stick to the same foods over time. 
+            <strong>FitSecret</strong> takes note of your most frequently consumed meals and activities, making it a breeze to add them back to your log.
+          </p>
+          <br>
+          <p>
+            The more you keep track of your meals, the more effortless it becomes!
+          </p>
+        </div>
+        <br>
+        <br>
+      </div>
+  
+        <div class="list">
+          <h3>Having FREE membership you get:</h3>
+          <br>
+          <div class="benefit-list">
+            <ul>
+              <ol>
+                <i class='bx bxs-right-arrow'></i> 
+                <strong>The most user-friendly food diary available on the web</strong> - 
+                Easily record your meals with just a few clicks, whether you're at home or at work, 
+                as long as you have an internet connection.
+              </ol>
+              <br>
+              <ol>
+                <i class='bx bxs-right-arrow'></i>
+                <strong>Your very own personal food database</strong> - 
+                Add your preferred foods and recipes whenever you like, 
+                and access them from anywhere with an internet connection.
+              </ol>
+              <br>
+              <ol>
+                <i class='bx bxs-right-arrow'></i>
+                <strong>A tailored diet profile</strong> - 
+                Customized to align with your unique weight loss objectives.
+              </ol>
+            </ul> 
+          </div>
+
+  
+  
+        </div>
+      
+
+    <script src="./scripts/form.js"></script>
+    <script src="./scripts/register.js"></script>
+    <script src="./scripts/home.js"></script>
+    <script src="./scripts/calendar.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </body>
+</html>
