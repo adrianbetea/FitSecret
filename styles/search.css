@@ -50,7 +50,8 @@
   border-radius: 20px;
 }
 
-.meal-details {
+.meal-details,
+.exercise-details {
   display: flex;
   flex-direction: row;
 }
@@ -66,4 +67,8 @@
   display: flex;
   flex-direction: row;
   transform: translate(10%, 17%);
+}
+
+.delete {
+  padding-right: 30px;
 }

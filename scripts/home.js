@@ -76,6 +76,8 @@ function openExercise() {
     });
     exerciseElm.style.backgroundColor = 'rgb(82, 186, 151)';
     exerciseElm.style.border = '2px solid white';
+
+    window.location.href = ("./exercise-journal.html");
     
 }
 
@@ -88,6 +90,8 @@ function openAbout() {
     });
     aboutElm.style.backgroundColor = 'rgb(82, 186, 151)';
     aboutElm.style.border = '2px solid white';
+
+    window.location.href = ("./about.html");
 
 }
 

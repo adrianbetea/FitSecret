@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>MyFoods- FitSecret</title>
+    <title>MyExecises - FitSecret</title>
     <link rel="icon" href="./images/Fit-Secret.png" type="image/x-icon" />
     <link rel="stylesheet" href="./styles/style.css" />
     <link rel="stylesheet" href="./styles/forms.css" />
@@ -30,19 +30,17 @@
             <a class="navbarElm" id="myhome" onclick="openMyHome()">MY Home</a>
           </li>
           <li class="navbarList">
+            <a class="navbarElm" id="food" onclick="openFood()">Food</a>
+          </li>
+          <li class="navbarList">
             <a
               class="navbarElm"
-              id="food"
-              onclick="openFood()"
+              id="exercise"
               style="
                 background-color: rgb(82, 186, 151);
                 border: 2px solid white;
               "
-              >Food</a
-            >
-          </li>
-          <li class="navbarList">
-            <a class="navbarElm" id="exercise" onclick="openExercise()"
+              onclick="openExercise()"
               >Exercise</a
             >
           </li>
@@ -77,15 +75,13 @@
         >
       </div>
 
-      <div class="food-navbar-element" id="food-journal" style="display: flex">
-        <a
-          href="./food-journal.html"
-          style="text-decoration: none; color: black"
+      <div class="food-navbar-element" id="food-journal" style="display: none">
+        <a href="./food-journal.html" style="text-decoration: none; color: gray"
           >Food Journal</a
         >
       </div>
-      <div class="food-navbar-element" id="food-foods" style="display: flex">
-        <a href="./my-foods.html" style="text-decoration: none; color: gray"
+      <div class="food-navbar-element" id="food-foods" style="display: none">
+        <a href="./my-foods.html" style="text-decoration: none; color: black"
           >My Foods</a
         >
       </div>
@@ -93,16 +89,24 @@
       <div
         class="exercise-navbar-element"
         id="exercise-journal"
-        style="display: none; width: 250px"
+        style="display: flex; width: 250px"
       >
         <a
-          style="text-decoration: none; color: gray"
           href="./exercise-journal.html"
+          style="text-decoration: none; color: black"
           >Exercise Journal</a
         >
       </div>
-      <div class="exercise-navbar-element" id="exercise-exercises">
-        My Exercises
+      <div
+        class="exercise-navbar-element"
+        id="exercise-exercises"
+        style="display: flex"
+      >
+        <a
+          href="./exercise-journal.html"
+          style="text-decoration: none; color: gray"
+          >My Exercises</a
+        >
       </div>
 
       <div class="about-navbar-element">About FitSecret</div>
@@ -114,16 +118,29 @@
     </div>
 
     <div class="search-container">
-      <div class="food-menu" style="width: 500px; height: 420px"></div>
-      <div class="meal-details">
+      <div class="exercise-menu" style="width: 500px; height: 420px"></div>
+      <div class="exercise-details">
         <div class="servings">
           <div>
-            <label style="color: black; font-size: 25px">Servings:</label>
+            <label style="color: black; font-size: 20px">Minutes:</label>
             <input
               type="text"
               size="5px"
               style="
-                height: 30px;
+                height: 25px;
+                margin-left: 20px;
+                margin-bottom: 10px;
+                background-color: antiquewhite;
+              "
+            />
+          </div>
+          <div>
+            <label style="color: black; font-size: 20px">Calories:</label>
+            <input
+              type="text"
+              size="5px"
+              style="
+                height: 25px;
                 margin-left: 20px;
                 margin-bottom: 10px;
                 background-color: antiquewhite;
@@ -131,42 +148,6 @@
             />
           </div>
           <button style="height: 25px">Add</button>
-        </div>
-
-        <div class="meal-select">
-          <button
-            style="
-              height: 30px;
-              margin-left: 10px;
-              margin-right: 15px;
-              border: 2px solid;
-            "
-            id="breakfast-sel"
-            onclick="selectBreakfast()"
-          >
-            Breakfast
-          </button>
-          <button
-            style="height: 30px; margin-right: 15px; border: 2px solid"
-            id="lunch-sel"
-            onclick="selectLunch()"
-          >
-            Lunch
-          </button>
-          <button
-            style="height: 30px; margin-right: 15px; border: 2px solid"
-            id="dinner-sel"
-            onclick="selectDinner()"
-          >
-            Dinner
-          </button>
-          <button
-            style="height: 30px; margin-right: 15px; border: 2px solid"
-            id="snacks-sel"
-            onclick="selectSnacks()"
-          >
-            Snacks
-          </button>
         </div>
       </div>
     </div>

@@ -1,0 +1,33 @@
+.exercise-journal-container {
+  width: 700px;
+  height: 630px;
+  margin: auto;
+  margin-top: 20px;
+  border: 2px solid;
+  border-radius: 15px;
+  background: transparent;
+  backdrop-filter: blur(5px);
+  padding: 20px;
+}
+
+.exercise-container {
+  display: flex;
+  background-color: aqua;
+  width: 100%;
+  height: 80%;
+}
+
+.add-exercise {
+  font-size: 13px;
+  color: #0072bf;
+  padding-right: 9px;
+  margin-right: 7px;
+  cursor: pointer;
+  text-decoration: none;
+  vertical-align: baseline;
+}
+
+.exercise-description {
+  font-size: 10px;
+  text-decoration: none;
+}
